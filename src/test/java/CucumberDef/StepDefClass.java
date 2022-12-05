@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 public class StepDefClass {
+    //Git trial
     WebDriver driver;
 
     @Given("user is navigated to HRMS application")
