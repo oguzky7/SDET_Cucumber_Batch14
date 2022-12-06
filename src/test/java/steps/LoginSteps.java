@@ -1,4 +1,5 @@
-package CucumberDef;
+package steps;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -7,20 +8,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utils.CommonMethods;
+
 import java.util.concurrent.TimeUnit;
-public class StepDefClass {
-    //Git trial
-    WebDriver driver;
+
+public class LoginSteps extends CommonMethods {
+    //WebDriver driver;
 
     @Given("user is navigated to HRMS application")
     public void user_is_navigated_to_hrms_application() {
+        openBrowserAndLaunchApplication();
 
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login%22%22");
-                driver.manage().window().maximize();
+//        WebDriverManager.chromedriver().setup();
+//        driver = new ChromeDriver();
+//
+//        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//        driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login%22%22");
+//        driver.manage().window().maximize();
 
     }
 
