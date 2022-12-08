@@ -1,4 +1,4 @@
-/*package CucumberTool;
+package CucumberTool;
 
 
 
@@ -15,5 +15,3 @@ import org.junit.runner.RunWith;
 
 public class RunnerClass {
 }
-
- */
